@@ -37,6 +37,13 @@ npm run start    # serve the production build
 Project content lives in [`src/lib/projects.ts`](src/lib/projects.ts) — edit that file
 to update the showcased work.
 
+## Visitor analytics
+
+Tracking is handled by [Umami Cloud](https://cloud.umami.is) (free tier) — city-level
+locations, referrers, pages, and devices, viewed in Umami's private dashboard. The
+script only loads when `NEXT_PUBLIC_UMAMI_WEBSITE_ID` is set (Vercel → project →
+Environment Variables), so local dev traffic is never counted.
+
 ## Built with agentic development
 
 This site — like the products it showcases — was designed and built through agentic
