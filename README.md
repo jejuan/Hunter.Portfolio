@@ -41,8 +41,7 @@ to update the showcased work.
 
 Tracking is handled by [Umami Cloud](https://cloud.umami.is) (free tier) — city-level
 locations, referrers, pages, and devices, viewed in Umami's private dashboard. The
-script only loads when `NEXT_PUBLIC_UMAMI_WEBSITE_ID` is set (Vercel → project →
-Environment Variables), so local dev traffic is never counted.
+script only loads in production builds, so local dev traffic is never counted.
 
 ## Built with agentic development
 

@@ -60,10 +60,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         className="min-h-full flex flex-col bg-background text-foreground"
       >
         {children}
-        {process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID && (
+        {process.env.NODE_ENV === "production" && (
           <Script
             src="https://cloud.umami.is/script.js"
-            data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+            data-website-id="897a0b89-c5e5-417b-898e-6c3bcc19f195"
             strategy="afterInteractive"
           />
         )}
