@@ -29,6 +29,7 @@ export const projects: Project[] = [
     name: "InsightAide",
     tagline: "AI-driven investment research & analysis platform",
     category: "AI Platform · Machine Learning",
+    href: "https://insightaide.com",
     status: "Private beta",
     featured: true,
     summary:

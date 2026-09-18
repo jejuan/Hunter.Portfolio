@@ -47,6 +47,17 @@ export default async function CaseStudyPage({ params }: PageProps<"/work/[slug]"
               {project.name}
             </h1>
             <p className="mt-3 text-lg text-muted">{project.tagline}</p>
+            {project.href && (
+              <a
+                href={project.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-accent transition-colors hover:text-accent/80"
+              >
+                Visit {project.href.replace("https://", "")}
+                <span aria-hidden>↗</span>
+              </a>
+            )}
             <div className="mt-5 flex flex-wrap gap-2">
               {project.stack.map((tech) => (
                 <span
